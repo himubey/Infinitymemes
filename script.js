@@ -5,7 +5,7 @@ const infmemes=()=>{
     .then((data)=>data.json())
     .then((data_val)=>{
         let url_data=data_val.url;
-        document.getElementById("img").src=url_data;
+        document.getElementById("img").src = url_data;
     });
 };
 
@@ -18,7 +18,7 @@ function share() {
         .share({
             title:"Infinity Memes",
             text:"infinity Memes",
-            url:url_data,
+            url: url_data,
         })
         
         .then(()=>console.log("Successful Share"))
