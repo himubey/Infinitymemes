@@ -4,9 +4,10 @@ const infmemes=()=>{
     fetch("https://meme-api.com/gimme/memes")
     .then((data)=>data.json())
     .then((data_val)=>{
-        let url_data=data_val.url;
+        url_data=data_val.url;
         document.getElementById("img").src = url_data;
     });
+    
 };
 
 
