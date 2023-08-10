@@ -1,9 +1,10 @@
+let url_data;
 
 const infmemes=()=>{
     fetch("https://meme-api.com/gimme/memes")
     .then((data)=>data.json())
     .then((data_val)=>{
-        const url_data=data_val.url;
+        let url_data=data_val.url;
         document.getElementById("img").src=url_data;
     });
 };
@@ -17,14 +18,16 @@ function share() {
         .share({
             title:"Infinity Memes",
             text:"infinity Memes",
-            url:url_data,
+            url:"url_data",
         })
-
+        
         .then(()=>console.log("Successful Share"))
-        .catch((error)=>console.log("error",error))
+        .catch((error)=>console.log("Error",error))
+    } else {
+        console.log("Share API not available in this browser");
     }
 }
 
-const next = ()=>{
+function next() {
     infmemes();
 }
