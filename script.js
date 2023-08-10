@@ -18,7 +18,7 @@ function share() {
         .share({
             title:"Infinity Memes",
             text:"infinity Memes",
-            url: url_data,
+            url:"url_data",
         })
         
         .then(()=>console.log("Successful Share"))
