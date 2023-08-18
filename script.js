@@ -6,6 +6,7 @@ const infmemes=()=>{
     .then((data_val)=>{
         url_data=data_val.url;
         document.getElementById("img").src = url_data;
+        console.log(infmemes);
     });
     
 };
@@ -16,22 +17,24 @@ infmemes();
 const shareData = {
          title:"Infinity Memes",
          text:"infinity Memes",
-         url:url_data,
+         url:"url_data",
 }
 
-const btn = document.querySelector("#btn")
-const sharePara = document.querySelector("share_res")
+const btn = document.getElementById("btn");
+const sharePara = document.querySelector("share_res");
 
 // share must be triggered by "user activation"
 
 btn.addEventListener("click", async () => {
-    try{
+    try {
         await navigator.share(shareData);
         sharePara.textContent = "MEME Share successfully";
     } catch (err) {
-        resultPara.textContent = `Error: ${err}`;
+        sharePara.textContent = `Error: ${err}`;
     }
 });
+
+console.log(shareData);
 
 // function share() {
 //     if(navigator.share !==undefined){
