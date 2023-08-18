@@ -19,7 +19,7 @@ const shareData = {
          url:url_data,
 }
 
-//const btn = document.querySelector("button")
+const btn = document.querySelector("#btn")
 const sharePara = document.querySelector("share_res")
 
 // share must be triggered by "user activation"
