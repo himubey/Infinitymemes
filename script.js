@@ -16,10 +16,10 @@ infmemes();
 const shareData = {
          title:"Infinity Memes",
          text:"infinity Memes",
-         url:"url_data",
+         url:url_data,
 }
 
-const btn = document.querySelector("button")
+//const btn = document.querySelector("button")
 const sharePara = document.querySelector("share_res")
 
 // share must be triggered by "user activation"
