@@ -17,7 +17,7 @@ infmemes();
 const shareData = {
          title:"Infinity Memes",
          text:"infinity Memes",
-         url:"url_data",
+         url:url_data,
 };
 
 const btn = document.getElementById("btn");
