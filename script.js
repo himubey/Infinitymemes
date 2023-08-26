@@ -14,7 +14,7 @@ const infmemes=()=>{
 infmemes();
 
 function share() {
-    if(navigator.share !==undefined){
+    if(navigator.share !=undefined){
         navigator
         .share({
             title:"Infinity Memes",
